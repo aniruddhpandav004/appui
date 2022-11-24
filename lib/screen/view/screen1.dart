@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class Screen1 extends StatefulWidget {
   const Screen1({Key? key}) : super(key: key);
@@ -32,8 +31,9 @@ class _Screen1State extends State<Screen1> {
                 ),
               ],
             ),
+            Center(child: FlutterLogo(size: 50),),
             Container(
-              height: MediaQuery.of(context).size.height * 0.5,
+              height: MediaQuery.of(context).size.height * 0.6,
               width: MediaQuery.of(context).size.width * 0.7,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -73,8 +73,9 @@ class _Screen1State extends State<Screen1> {
                       height: 40,
                       width: double.infinity,
                       child: OutlinedButton(
+                        style: OutlinedButton.styleFrom(primary: Color(0xff7971E8)),
                         onPressed: () {},
-                        child: Text("Sign Up"),
+                        child: Text("Sign Up",style: TextStyle(color: Color(0xff7971E8)),),
                       ),
                     ),
                     SizedBox(
