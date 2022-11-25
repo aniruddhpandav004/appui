@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Screen2 extends StatefulWidget {
-  const Screen2({Key? key}) : super(key: key);
+class Screen6 extends StatefulWidget {
+  const Screen6({Key? key}) : super(key: key);
 
   @override
-  State<Screen2> createState() => _Screen2State();
+  State<Screen6> createState() => _Screen6State();
 }
 
-class _Screen2State extends State<Screen2> {
+class _Screen6State extends State<Screen6> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -44,16 +44,16 @@ class _Screen2State extends State<Screen2> {
                         TextField(
                           decoration: InputDecoration(
                             border: OutlineInputBorder(),
-                            hintText: "Email",
-                            prefixIcon: Icon(Icons.email),
+                            hintText: "*** *** 6124",
+                            prefixIcon: Icon(Icons.phone_android),
                           ),
                         ),
                         SizedBox(height: 10),
                         TextField(
                           decoration: InputDecoration(
                             border: OutlineInputBorder(),
-                            hintText: "Password",
-                            prefixIcon: Icon(Icons.lock),
+                            hintText: "******74@gmail.com",
+                            prefixIcon: Icon(Icons.email),
                           ),
                         ),
                         SizedBox(height: 20),
@@ -63,13 +63,8 @@ class _Screen2State extends State<Screen2> {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(primary: Color(0xff7971E8)),
                             onPressed: () {},
-                            child: Text("Sign In"),
+                            child: Text("Recover Password"),
                           ),
-                        ),
-                        SizedBox(height: 20),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text("Forgot Password?",style: TextStyle(color: Color(0xff7971E8)),),
                         ),
                       ],
                     ),
@@ -77,46 +72,6 @@ class _Screen2State extends State<Screen2> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20),
-                  ),
-                ),
-                SizedBox(height: 20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(height: 1,width: 70,color: Colors.black,),
-                    Text("  Or Connect Using  "),
-                    Container(height: 1,width: 70,color: Colors.black,),
-                  ],
-                ),
-                SizedBox(height: 20),
-                Container(
-                  height: 70,
-                  width: MediaQuery.of(context).size.width * 0.7,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.white,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                          height: 50,
-                          width: 50,
-                          child: Image.asset("assets/images/f1.png")),
-                      Container(
-                          height: 50,
-                          width: 50,
-                          child: Image.asset("assets/images/f2.png")),
-                      Container(
-                          height: 50,
-                          width: 50,
-                          child: Image.asset("assets/images/f3.jpg")),
-                      Container(
-                        height: 50,
-                        width: 50,
-                        child: Image.asset("assets/images/f4.png"),
-                      ),
-                    ],
                   ),
                 ),
               ],

@@ -14,9 +14,9 @@ class _Screen1State extends State<Screen1> {
       child: Scaffold(
         backgroundColor: Color(0xffDFE0E4),
         body: Stack(
-          alignment: Alignment.center,
           children: [
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   height: MediaQuery.of(context).size.height / 2,

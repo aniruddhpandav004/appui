@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Screen2 extends StatefulWidget {
-  const Screen2({Key? key}) : super(key: key);
+class Screen3 extends StatefulWidget {
+  const Screen3({Key? key}) : super(key: key);
 
   @override
-  State<Screen2> createState() => _Screen2State();
+  State<Screen3> createState() => _Screen3State();
 }
 
-class _Screen2State extends State<Screen2> {
+class _Screen3State extends State<Screen3> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -35,12 +35,20 @@ class _Screen2State extends State<Screen2> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.5,
+                  height: MediaQuery.of(context).size.height * 0.6,
                   width: MediaQuery.of(context).size.width * 0.7,
                   child: Padding(
                     padding: const EdgeInsets.all(13.0),
                     child: Column(
                       children: [
+                        TextField(
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(),
+                            hintText: "Full Name",
+                            prefixIcon: Icon(Icons.person),
+                          ),
+                        ),
+                        SizedBox(height: 10),
                         TextField(
                           decoration: InputDecoration(
                             border: OutlineInputBorder(),
@@ -63,13 +71,13 @@ class _Screen2State extends State<Screen2> {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(primary: Color(0xff7971E8)),
                             onPressed: () {},
-                            child: Text("Sign In"),
+                            child: Text("Sign Up"),
                           ),
                         ),
                         SizedBox(height: 20),
                         TextButton(
                           onPressed: () {},
-                          child: Text("Forgot Password?",style: TextStyle(color: Color(0xff7971E8)),),
+                          child: Text("Terms of Service",style: TextStyle(color: Color(0xff7971E8)),),
                         ),
                       ],
                     ),
